@@ -12,7 +12,6 @@
   font-size: var(--font-large);
   position: fixed;
   top: 0;
-  z-index: 2;
 }
 
 .top-bar__logobox {
@@ -38,7 +37,7 @@
 }
 
 .video_box {
-  margin-top: 48px;
+  margin-top: 45px;
   height: 100%;
   background-color: var(--black-color);
   text-align: center;
