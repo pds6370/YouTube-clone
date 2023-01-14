@@ -1,0 +1,68 @@
+.aside-bar {
+  width: 170px;
+  background-color: var(--black-color);
+  padding: var(--side-padding);
+  color: white;
+  font-weight: bold;
+  font-size: var(--font-large);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: transform 0.2s linear;
+}
+
+.hiddenaside {
+  transform: translateX(-100%);
+}
+
+.aside-topbar__logobox {
+  position: relative;
+}
+
+.aside-topbar__logobox .fa-bars {
+  margin-right: var(--side-padding);
+  cursor: pointer;
+}
+.fa-youtube {
+  color: var(--red-color);
+}
+.top-bar__country {
+  font-size: var(--font-micro);
+  position: absolute;
+  font-weight: normal;
+  color: var(--grey-color);
+}
+
+.aside-icons {
+  width: 25px;
+  height: 25px;
+}
+
+.aside-bar__column {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.aside-bar__column > li {
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.aside-bar .aside-bar__column a {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.aside-bar__column:last-child li:last-child a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.aside-bar__column li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+}
