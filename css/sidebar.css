@@ -1,5 +1,5 @@
 .aside-bar {
-  width: 170px;
+  width: 180px;
   background-color: var(--black-color);
   padding: var(--side-padding);
   color: white;
@@ -10,6 +10,7 @@
   left: 0;
   z-index: 10;
   transition: transform 0.2s linear;
+  height: 100vh;
 }
 
 .hiddenaside {
@@ -56,7 +57,7 @@
   margin-left: 10px;
 }
 
-.aside-bar__column:last-child li:last-child a {
+.aside-bar__column:nth-child(3) li a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -65,4 +66,30 @@
 .aside-bar__column li:hover {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 6px;
+}
+
+.sideadd.hidden1 {
+  display: none;
+}
+
+.aside-bar .aside-bar__column:nth-child(4) > span {
+  display: flex;
+  padding: 5px 0;
+  font-size: var(--font-large);
+  font-weight: 400;
+}
+
+.aside-bar .aside-bar__column:nth-child(4) img {
+  border-radius: 50%;
+}
+
+.aside-bar .aside-bar__column:nth-child(4) > div > li {
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+
+.viewMoreHidden-box.hidden1 {
+  display: none;
 }

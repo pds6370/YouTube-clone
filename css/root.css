@@ -21,9 +21,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  letter-spacing: -1px;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  font-family: Roboto;
 }

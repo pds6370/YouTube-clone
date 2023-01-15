@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,13 +13,14 @@
   </head>
   <body>
     <aside class="aside-bar hiddenaside">
+      <!-- topbar -->
       <div class="aside-topbar__logobox">
         <i class="fa-solid fa-bars"></i>
         <i class="fa-brands fa-youtube"></i>
         <span class="top-bar__title">Premium</span>
         <span class="top-bar__country">KR</span>
       </div>
-
+      <!-- 홈 -->
       <ul class="aside-bar__column">
         <li>
           <div class="aside-icons">
@@ -88,6 +93,7 @@
           <a href="#">YouTube Music</a>
         </li>
       </ul>
+      <!-- 보관함 -->
       <ul class="aside-bar__column">
         <li>
           <div class="aside-icons">
@@ -172,7 +178,8 @@
           </div>
           <a href="#">내 클립</a>
         </li>
-        <li>
+
+        <li class="sideadd hidden1">
           <div class="aside-icons">
             <svg fill="white" viewBox="0 0 24 24">
               <g class="style-scope yt-icon">
@@ -185,7 +192,7 @@
           </div>
           <a href="#">즐겨찾기</a>
         </li>
-        <li>
+        <li class="sideadd hidden1">
           <div class="aside-icons">
             <svg fill="white" viewBox="0 0 24 24">
               <g class="style-scope yt-icon">
@@ -197,6 +204,135 @@
             </svg>
           </div>
           <a href="#">좋아요 표시한 동영상</a>
+        </li>
+
+        <li class="viewmore1">
+          <div class="aside-icons">
+            <svg
+              fill="white"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12,15.7L5.6,9.4l0.7-0.7l5.6,5.6l5.6-5.6l0.7,0.7L12,15.7z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <a class="briefAndmore" href="#"></a>
+        </li>
+      </ul>
+      <!-- 방구석코딩 -->
+      <ul class="aside-bar__column">
+        <span>구독</span>
+        <li>
+          <div class="aside-icons">
+            <img
+              draggable="false"
+              class="style-scope yt-img-shadow"
+              height="24"
+              width="24"
+              src="https://yt3.ggpht.com/VnXaXXcmqBz87kuqIe4ZfaA0T2cyUnsU2zfPoQe1F4TiA1WtW3V6cvW2NzkU-m2ZDyVPQJKTQQ=s88-c-k-c0x00ffffff-no-rj"
+            />
+          </div>
+          <a href="#">방구석 코딩</a>
+        </li>
+        <li>
+          <div class="aside-icons">
+            <img
+              draggable="false"
+              class="style-scope yt-img-shadow"
+              height="24"
+              width="24"
+              src="https://yt3.ggpht.com/ytc/AMLnZu8lOSdpFr74PDTO-S6N2OpmcSBP7szisHo1U7Ye=s88-c-k-c0x00ffffff-no-rj"
+            />
+          </div>
+          <a href="#">ZeroCho</a>
+        </li>
+        <li>
+          <div class="aside-icons">
+            <img
+              draggable="false"
+              class="style-scope yt-img-shadow"
+              height="24"
+              width="24"
+              src="https://yt3.ggpht.com/ytc/AMLnZu9JVtkGkNHY-yRPfmdqzP8DlYXPLId1Ql0jX2gtrg=s88-c-k-c0x00ffffff-no-rj"
+            />
+          </div>
+          <a href="#">드림코딩</a>
+        </li>
+        <li>
+          <div class="aside-icons">
+            <img
+              draggable="false"
+              class="style-scope yt-img-shadow"
+              height="24"
+              width="24"
+              src="https://yt3.ggpht.com/ytc/AMLnZu_D9bPoE9CaRkHRORhvnlzcwXq65qQMvtziuyTV=s88-c-k-c0x00ffffff-no-rj"
+            />
+          </div>
+          <a href="#">생활코딩</a>
+        </li>
+        <div class="viewMoreHidden-box hidden1">
+          <li>
+            <div class="aside-icons">
+              <img
+                draggable="false"
+                class="style-scope yt-img-shadow"
+                height="24"
+                width="24"
+                src="	https://yt3.ggpht.com/ytc/AMLnZu8wdUgh-OwDRrYLexXTrxXgtJMzlD37plLJLY9S=s88-c-k-c0x00ffffff-no-rj"
+              />
+            </div>
+            <a href="#">코드종</a>
+          </li>
+          <li>
+            <div class="aside-icons">
+              <img
+                draggable="false"
+                class="style-scope yt-img-shadow"
+                height="24"
+                width="24"
+                src="https://yt3.ggpht.com/ytc/AMLnZu9jJ3W91jHejoh91MvZU_0phA06TGGNLEfthwqn=s88-c-k-c0x00ffffff-no-rj"
+              />
+            </div>
+            <a href="#">수코딩</a>
+          </li>
+        </div>
+        <li class="viewmore2">
+          <div class="aside-icons">
+            <svg
+              fill="white"
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12,15.7L5.6,9.4l0.7-0.7l5.6,5.6l5.6-5.6l0.7,0.7L12,15.7z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <a href="#" class="briefAndmore"></a>
         </li>
       </ul>
     </aside>
@@ -217,9 +353,9 @@
       <div class="videoAndinfo">
         <div class="video_box">
           <iframe
-            height="316"
             width="560"
-            src="https://www.youtube.com/embed/Cxzzg7L3Xgc"
+            height="315"
+            src="https://www.youtube.com/embed/67stn7Pu7s4"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
