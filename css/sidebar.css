@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 11;
   transition: transform 0.2s linear;
   height: 100vh;
 }
@@ -43,6 +43,9 @@
 .aside-bar__column {
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.aside-bar__column:nth-child(2) {
+  margin-top: 10px;
 }
 .aside-bar__column > li {
   padding: 5px 5px;

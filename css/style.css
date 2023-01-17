@@ -1,12 +1,13 @@
 @import "root.css";
 @import "sidebar.css";
+@import "home.css";
 .top-bar {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--black-color);
-  padding: var(--side-padding);
+  padding: var(--side-padding) 16px;
   color: white;
   font-weight: bold;
   font-size: var(--font-large);
@@ -103,12 +104,13 @@
   border: none;
   cursor: pointer;
   outline: none;
-  background-color: white;
 }
 
 .info-title__box > button {
   height: 100%;
   padding: 0 var(--side-padding);
+  background-color: black;
+  color: white;
 }
 
 .icons {
