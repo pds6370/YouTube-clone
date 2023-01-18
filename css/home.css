@@ -1,86 +1,49 @@
-.top {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.top .top-bar__logobox {
-  flex: none;
-  white-space: nowrap;
-  min-width: 170px;
-}
-.top .top-search {
-  position: relative;
-  flex: 1 1 60%;
-}
-.top-bar .top-icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  min-width: 225px;
-}
-
-.top-icons .top-icon_make,
-.top-icons .top-icon_ring {
-  margin-right: 20px;
-}
-.top-icons .top-icon_me {
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
-}
-.top-search .top-search__button {
-  position: relative;
-  width: 100%;
-}
-
-.top-search__button input {
-  width: 100%;
-  margin-left: 33px;
-  color: white;
-}
-
-.top-search__button:focus-within input {
-  width: 100%;
-  padding-left: 48px;
-  margin-left: 0;
-  border-color: #195197;
-  outline: none;
-}
-.top-search__button-icon {
-  display: none;
-}
-.top-search__button:focus-within .top-search__button-icon {
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 15px;
-}
-
-.top-search__button input {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  padding: 5px 15px;
-  font-size: var(--font-medium);
-}
-
-.top-search__button button {
-  position: absolute;
-  top: 0;
-  right: -64px;
-  width: 64px;
-  height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: #222222;
-  color: white;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
 @media screen and (max-width: 650px) {
   .top-search {
     display: none;
   }
+}
+
+/* section */
+
+.section {
+  position: fixed;
+  height: 100vh;
+  top: 56px;
+  width: 72px;
+  left: 0;
+}
+
+.section .side > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 66px;
+}
+.section .side > ul > li > svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
+  margin-bottom: 6px;
+}
+
+.section .side ul li {
+  padding: 13px 5px;
+}
+
+.section .side ul li span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+.aside-bar .aside-bar__column:nth-child(2) > li:first-child {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+}
+
+.section.maxhidden {
+  display: none;
 }

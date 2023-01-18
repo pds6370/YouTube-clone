@@ -1,11 +1,11 @@
 @import "root.css";
 @import "sidebar.css";
 @import "home.css";
+
+/* 탑 바  */
 .top-bar {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 56px;
   background-color: var(--black-color);
   padding: var(--side-padding) 16px;
   color: white;
@@ -16,8 +16,25 @@
   z-index: 10;
 }
 
+.top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 탑 바 좌측 로고 */
 .top-bar__logobox {
+  display: flex;
+  flex: none;
+  align-items: center;
   position: relative;
+  justify-content: center;
+  margin-left: 10px;
+}
+.top-bar__logobox .top-bar__title {
+  margin-left: 5px;
 }
 
 .top-bar__logobox .fa-bars {
@@ -32,14 +49,91 @@
   position: absolute;
   font-weight: normal;
   color: var(--grey-color);
+  right: -12px;
+  top: 0;
 }
 
 .top-bar .fa-ellipsis-vertical {
   margin-left: 10px;
 }
 
+/* 탑 바 중앙 서치 */
+.top .top-search {
+  position: relative;
+  flex: 0 1 728px;
+}
+
+.top-search .top-search__button {
+  position: relative;
+  width: 100%;
+  margin-left: 32px;
+}
+
+.top-search__button input {
+  width: 100%;
+  margin-left: 33px;
+  color: white;
+}
+
+.top-search__button:focus-within input {
+  width: 100%;
+  padding-left: 48px;
+  margin-left: 0;
+  border-color: #195197;
+  outline: none;
+}
+.top-search__button-icon {
+  display: none;
+}
+.top-search__button:focus-within .top-search__button-icon {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.top-search__button input {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 5px 15px;
+  font-size: var(--font-medium);
+}
+
+.top-search__button button {
+  position: absolute;
+  top: 0;
+  right: -64px;
+  width: 64px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #222222;
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* 탑 바 우측 아이콘 */
+.top-bar .top-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 225px;
+  flex: none;
+}
+
+.top-icons .top-icon_make,
+.top-icons .top-icon_ring {
+  margin-right: 20px;
+}
+.top-icons .top-icon_me {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
 .video_box {
-  margin-top: 45px;
+  margin-top: 56px;
   height: 100%;
   background-color: var(--black-color);
   text-align: center;
@@ -235,6 +329,6 @@
     display: flex;
   }
   .upNext-box {
-    margin: 55px 0;
+    margin: 56px 0;
   }
 }

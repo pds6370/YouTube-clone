@@ -54,3 +54,13 @@ viewmore2.addEventListener("click", () => {
   }
 });
 briefAndmore2.innerText = "더보기";
+
+//media
+const section = document.querySelector(".section");
+const min = window.matchMedia("screen and (min-width: 1001px)");
+
+if (min.matches) {
+  console.log(min.matches);
+  // section.classList.toggle("maxhidden");
+} else {
+}

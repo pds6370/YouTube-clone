@@ -1,7 +1,7 @@
 .aside-bar {
   width: 180px;
   background-color: var(--black-color);
-  padding: var(--side-padding);
+  padding: 12px 16px;
   color: white;
   font-weight: bold;
   font-size: var(--font-large);
@@ -17,22 +17,32 @@
   transform: translateX(-100%);
 }
 
-.aside-topbar__logobox {
+.aside-bar .aside-topbar__logobox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  height: 32px;
   position: relative;
 }
+.aside-bar .aside-topbar__logobox .top-bar__title {
+  margin-left: 5px;
+}
 
-.aside-topbar__logobox .fa-bars {
+.aside-bar .aside-topbar__logobox .fa-bars {
   margin-right: var(--side-padding);
   cursor: pointer;
 }
-.fa-youtube {
+.aside-bar .fa-youtube {
   color: var(--red-color);
 }
-.top-bar__country {
+.aside-bar .top-bar__country {
   font-size: var(--font-micro);
   position: absolute;
   font-weight: normal;
   color: var(--grey-color);
+  right: 10px;
+  top: 5px;
 }
 
 .aside-icons {
