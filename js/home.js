@@ -14,6 +14,7 @@ const rotate2 = document.querySelector(".viewmore2 .style-scope");
 const sideHidden = "hidden1";
 const section = document.querySelector(".section");
 const articleMain = document.querySelector(".article-main");
+let mediaMin = window.matchMedia("screen and (max-width: 900px)");
 
 // 3선 클릭 시 사이드 바
 
@@ -81,7 +82,7 @@ briefAndmore2.innerText = "더보기";
 
 //홈 사이드 미디어쿼리
 // 1000px 이하이면 true 아니면 false
-let mediaMin = window.matchMedia("screen and (max-width: 900px)");
+
 window.addEventListener("resize", (event) => {
   side.style.transition = "";
   if (mediaMin.matches == true) {
