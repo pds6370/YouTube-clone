@@ -14,7 +14,8 @@ const rotate2 = document.querySelector(".viewmore2 .style-scope");
 const sideHidden = "hidden1";
 
 function hiddenAside1() {
-  side.classList.toggle("hiddenaside");
+  side.classList.toggle("hiddenaside1");
+  side.style.transition = "transform 0.2s linear";
 }
 
 icon1.addEventListener("click", hiddenAside1);
@@ -27,33 +28,33 @@ function clickBtn() {
 
 btn.addEventListener("click", clickBtn);
 
-function clickViewMore() {
-  for (let i = 0; i < sideadd.length; i++) {
-    sideadd[i].classList.toggle(sideHidden);
-    if (sideadd[i].classList.contains(sideHidden)) {
-      briefAndmore1.innerText = "더보기";
-      rotate1.style.transform = "rotate(360deg)";
-    } else {
-      briefAndmore1.innerText = "간략히 보기";
-      rotate1.style.transform = "rotate(180deg)";
-    }
-  }
-}
-briefAndmore1.innerText = "더보기";
+// function clickViewMore() {
+//   for (let i = 0; i < sideadd.length; i++) {
+//     sideadd[i].classList.toggle(sideHidden);
+//     if (sideadd[i].classList.contains(sideHidden)) {
+//       briefAndmore1.innerText = "더보기";
+//       rotate1.style.transform = "rotate(360deg)";
+//     } else {
+//       briefAndmore1.innerText = "간략히 보기";
+//       rotate1.style.transform = "rotate(180deg)";
+//     }
+//   }
+// }
+// briefAndmore1.innerText = "더보기";
 
-viewmore.addEventListener("click", clickViewMore);
+// viewmore.addEventListener("click", clickViewMore);
 
-viewmore2.addEventListener("click", () => {
-  viewMoreHiddenbox.classList.toggle(sideHidden);
-  if (viewMoreHiddenbox.classList.contains(sideHidden)) {
-    briefAndmore2.innerText = "더보기";
-    rotate2.style.transform = "rotate(360deg)";
-  } else {
-    briefAndmore2.innerText = "간략히 보기";
-    rotate2.style.transform = "rotate(180deg)";
-  }
-});
-briefAndmore2.innerText = "더보기";
+// viewmore2.addEventListener("click", () => {
+//   viewMoreHiddenbox.classList.toggle(sideHidden);
+//   if (viewMoreHiddenbox.classList.contains(sideHidden)) {
+//     briefAndmore2.innerText = "더보기";
+//     rotate2.style.transform = "rotate(360deg)";
+//   } else {
+//     briefAndmore2.innerText = "간략히 보기";
+//     rotate2.style.transform = "rotate(180deg)";
+//   }
+// });
+// briefAndmore2.innerText = "더보기";
 
 //media
 const section = document.querySelector(".section");
