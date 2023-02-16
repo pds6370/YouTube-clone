@@ -13,7 +13,7 @@ const rotate1 = document.querySelector(".viewmore1 .style-scope");
 const rotate2 = document.querySelector(".viewmore2 .style-scope");
 const sideHidden = "hidden1";
 const section = document.querySelector(".section");
-const articleMain = document.querySelector(".article-main");
+const article = document.querySelector(".article");
 let mediaMin = window.matchMedia("screen and (max-width: 900px)");
 
 // 3선 클릭 시 사이드 바
@@ -24,6 +24,7 @@ function renew() {
   if (mediaMin.matches == false) {
     side.style.transition = "none";
     side.classList.remove("hiddenaside1");
+    article.style.margin = "0 16px 0 115px";
   } else {
     side.classList.add("hiddenaside1");
   }
@@ -38,12 +39,12 @@ function hiddenAside1() {
     side.style.transition = "";
   }
   if (mediaMin.matches == false && side.classList.contains("hiddenaside1")) {
-    articleMain.style.margin = "0 16px";
+    article.style.margin = "0 16px";
   } else if (
     mediaMin.matches == false &&
     !side.classList.contains("hiddenaside1")
   ) {
-    articleMain.style.margin = "0 16px 0 115px";
+    article.style.margin = "0 16px 0 115px";
   }
 }
 
@@ -84,12 +85,15 @@ briefAndmore2.innerText = "더보기";
 // 1000px 이하이면 true 아니면 false
 
 window.addEventListener("resize", (event) => {
+  const slideSize = document.querySelector(".slide-box");
   side.style.transition = "";
   if (mediaMin.matches == true) {
     side.classList.add("hiddenaside1");
-    articleMain.style.margin = "0";
+    article.style.margin = "0";
+    slideSize.style.width = `${window.innerWidth - 113}px`;
   } else if (mediaMin.matches == false) {
     side.classList.remove("hiddenaside1");
-    articleMain.style.margin = "0 0 0 115px";
+    article.style.margin = "0 0 0 115px";
+    slideSize.style.width = `${window.innerWidth - 200}px`;
   }
 });

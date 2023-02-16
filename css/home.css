@@ -44,7 +44,7 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 6px;
 }
-.section li:hover {
+.section > .side li:hover {
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 6px;
@@ -66,6 +66,8 @@
 }
 
 .section .article .article-main {
+  margin-right: 24px;
+  margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -149,7 +151,7 @@
 }
 
 @media screen and (min-width: 901px) and (max-width: 1300px) {
-  .article-main {
+  .section .article {
     margin-left: 115px;
   }
   .section .article .article-main {
@@ -159,11 +161,72 @@
 }
 
 @media screen and (min-width: 1301px) {
-  .article-main {
+  .article {
     margin-left: 115px;
   }
   .section .article .article-main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/* 탑 슬라이드 */
+
+.slide {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.slide-box {
+  white-space: nowrap;
+  display: inline;
+  align-items: center;
+  overflow: hidden;
+}
+.slide .slide-icon-box:first-child {
+  background: linear-gradient(90deg, #100900, 80%, transparent);
+  left: 0;
+}
+.slide .slide-icon-box:last-child {
+  background: linear-gradient(-90deg, #100900, 80%, transparent);
+  right: 0;
+}
+
+.slide .rigth {
+  margin-left: auto;
+  margin-right: 0;
+}
+.slide .slide-icon-box {
+  display: flex;
+  position: absolute;
+  font-size: 18px;
+  width: 100px;
+}
+
+.slide button {
+  width: 40px;
+  height: 40px;
+  background-color: #100900;
+  color: white;
+  border-radius: 50%;
+  border: none;
+}
+
+.slide-box > li {
+  display: inline-block;
+  border-radius: 8px;
+  margin: 12px 12px 12px 0;
+  font-size: var(--font-medium);
+  padding: 6px 10px;
+  background-color: #272727;
+}
+
+.slide-icon-box:hover .left {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.slide-icon-box {
+  z-index: 100;
 }
